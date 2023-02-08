@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- https://www.cs.ryerson.ca/~a5delacr/lab04.html -->
+<html lang=en>
+<head>
+	<title>
+		Lab 04 Javascript
+	</title>
+	
+	<script src="lab04.js"></script>
+
+</head>
+
+
+<body style="background-color:#251B37; text-align:center;">
+	<style>
+		
+		textarea {
+			resize: none;
+			margin-top:2%;
+		}
+		
+		div.contentholder {
+			display: block;
+			background-color:#FFECEF; 
+			max-width:60%;
+			margin-top:2%;
+			margin-left:20%;
+			border: 6px solid #FFCACA;
+		}
+		
+		.text {
+			color:#372948;
+			font-family:Verdana, sans-serif;
+			margin-top:5px;
+			text-align:center;
+		}
+		
+		label {
+			color:#372948;
+			font-family:Verdana, sans-serif;
+			margin-top:5px;
+			text-align:center;
+		}
+		
+		img {
+			max-width: 20px;
+			height: auto;
+			background-color:#FFECEF;
+			border: 2px solid #FFCACA;
+		}
+		
+		img.duck {
+			max-width: 60%;
+			height: auto;
+			background-color:#FFECEF;
+			border: 2px solid #FFCACA;
+		}
+		
+		#result {
+			display: none;
+		}
+		
+		
+		
+	</style>
+	
+
+	
+	<div class="contentholder" id="contact"> <!-- Contact submission -->
+		<form onsubmit = "contactSub(this)" method="get" id="contactform">
+			<h2 class="text"> Contact Submission </h2>
+			<label for="username">Name</label>
+			<input id = "username" type = "text" placeholder = "Full name:" required>
+			<br>
+			<label for="useraddress">Address</label>
+			<input id = "useraddress" type = "text" placeholder = "Address:" required>
+			<br>
+			<label for="userphone">Phone Number (Format XXX-XXX-XXXX)</label>
+			<input id = "userphone" type = "text" placeholder = "Phone number:" required>
+			<br>
+			
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+	
+	<div class="contentholder" id="result" >
+		<h1 class='text'> Thanks for submitting! </h1>
+		<h2 class="text" id="resultName" placeholder="Kiyotaka Ayanokouji"> </h2>
+		<h2 class="text" id="resultAddress" placeholder="Hidden Leaf Village 2928"> </h2>
+		<h2 class="text" id="resultPhone" placeholder="(123)-456-7890"> </h2>
+	</div>
+
+	<div class="contentholder"> <!-- Character counter -->
+		<h2 class="text"> Character Counter </h2>
+		<textarea onkeyup="counter(this)" rows="10" cols="50" placeholder="Enter text:"></textarea>
+		<p class=text> Total characters: <span class="text" id="totalChars">0</span> </p>
+		<p class=text style="margin-bottom:2%"> Total letters: <span class="text" id="alphaChars">0</span> </p>
+	</div> 
+	
+	<div class="contentholder"> <!-- Bookmarks -->
+		<h2 class="text"> Bookmarks </h2>
+		<p class="text" id='linklist'>
+			<p class="text"><a href = "https://www.youtube.com/">Youtube <img src="https://cdn-icons-png.flaticon.com/512/7216/7216133.png"> </a> </p>
+			<p class="text"><a href = "http://stackoverflow.com/">Stack Overflow<img src="https://cdn-icons-png.flaticon.com/512/5690/5690960.png"> </a> </p>
+			<fig> <img src="https://cdn.discordapp.com/attachments/297729469358276620/842124021029404752/image0-23.gif" alt="pic" class='duck'>
+				<figcaption class='text'> bookmark duck </figcaption>		
+			</fig>
+		</p>
+	</div>
+	<div class="contentholder">
+		<h2 class="text"> Add bookmarks </h2>
+		<form onsubmit = "addSiteForm()">
+			<label>Website Name:</label>
+			<input id = "siteName" type = "text" placeholder = "Google" required />
+			<br>
+			<label>Website URL:</label>
+			<input id = "siteLink" type = "text" placeholder = "https://google.com" required />
+			<br>
+			<button type = "submit">Submit</button>
+		</form>
+	</div>
+	
+</body>
+</html>

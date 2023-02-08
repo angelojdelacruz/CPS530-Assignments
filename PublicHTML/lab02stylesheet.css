@@ -1,0 +1,35 @@
+/* TO USE: layout with either grid, float, or flexbox */
+.text {color:white; font-family:Arial, sans-serif; margin-top:5px}
+.heading {padding:20px;}
+.picturegeneral {border: 5px solid white; width: 275px; height: auto; box-shadow: 5px 5px 3px 2px #999999; background-color:#0b2443}
+
+
+
+#headingcolor {background-color:#0b2443;}
+
+#aboutmelink {position:absolute; left:75px; top:20px; z-index:4}
+#educationlink{position:absolute; left:400px; top:70px; z-index:3; background-color:#0b2443}
+#interestslink{position:absolute; left:725px; top:70px; z-index:2; background-color:#0b2443}
+#contactlink {position:absolute; left:1050px; top:70px; z-index:1; background-color:#0b2443}
+#abouttext {position: absolute; left:175px; top:400px}
+#educationtext {position: absolute; left:480px ; top:400px}
+#interesttext {position: absolute; left:825px ; top:400px}
+#contacttext {position: absolute; left:1150px ; top:400px}
+
+#abtpadding {padding:5px}
+#ducktext {padding:15px}
+#altpicpos1 {float:left}
+#altpicpos2 {float:left; margin-top:200px; margin-left:-250px}
+#specificpicmargin {margin:90px}
+
+body {background-color:#252525; margin:0; margin-top:-30px}
+fig {display:none; position:relative; padding:10px; z-index:99}
+aside {background-color:#252525; float:right; margin-left:15px; padding:5px;}
+
+div.navholder {float:none; display: flex; flex-wrap:nowrap; position:relative; left:30px; padding:5px; text-align:justify; justify-content:space-evenly; width:1200px; height:500px}
+div.textbox {background-color:#0b2443;  border:5px solid white; width:800px; align:center; margin-left:370px; padding: 5px}
+nav.box {width: 1200px; height:500px}
+div.imageholder {display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); grid-column-gap: 0px; grid-row-gap: 0px; background-color:#0b2443; margin:10px} 
+div.griditem {border: 2px solid white; padding: 10px; text-align: center; background-color:#0b2443}
+
+h4:hover + fig {display:block}  

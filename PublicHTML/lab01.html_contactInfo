@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- https://www.cs.ryerson.ca/~a5delacr/lab01.html To use: section-->
+<html>
+<head>
+<title>Angelo Dela Cruz's Webpage</title>
+</head>
+
+<body style = "margin: 0; margin-top:-30px; background-color: #252525;">
+<header style = "background-color:#0A1D6A; color:white"> <h1 style = "padding:20px; font-family:Arial, sans-serif">About Angelo Dela Cruz</h1> 
+<nav> 
+	<a href="https://www.cs.ryerson.ca/~a5delacr/lab01.html" style="color:white; font-family:Arial, sans-serif"> Main Page |</a>
+	<a href="https://youtu.be/3-C-iLj8_64" style="color:white; font-family:Arial, sans-serif">Highlighted Video |</a>
+	<a href="https://www.torontomu.ca/cs/current-undergraduate-students/curriculum-courses/course-lists/" style="color:white; font-family:Arial, sans-serif"> My course list |</a>
+	<a href="https://www.cs.ryerson.ca/~a5delacr/lab01.html_contactInfo" style="color:yellow;">Contact Info |</a>
+
+</nav>
+</header>
+
+<main>
+
+	<details style="color:white">
+		<summary> Contact </summary>
+		<p> Email: angelodcsj@gmail.com </p>
+		<p> School Email: angelo.j.delacruz@ryerson.ca </p>
+		<p> Come say hi on campus! I'll generally be around DSQ, ENG, and TRSM, or the SLC! </p>
+	</details>
+
+<hr>
+
+<fig style="margin-left:650px;"> <img src="https://cdn.discordapp.com/attachments/297729469358276620/842124021029404752/image0-23.gif" alt="pic" </fig>
+<figcaption style="color:white; margin-left:725px; font-family:Arial, sans-serif"> bonus duck </figcaption>
+</figure>
+
+</main >
+</body>
+</html>

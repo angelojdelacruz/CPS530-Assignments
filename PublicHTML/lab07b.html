@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- https://www.cs.ryerson.ca/~a5delacr/lab07b.html -->
+<html lang=en>
+<head>
+	<title>
+		Customer Registration
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body style="background-color:#36235c; text-align:center; font-family:Verdana, sans-serif;">
+
+<style>
+	div.infobox {
+		display: block;
+		background-color:#8B23E6; 
+		max-width:60%;
+		margin-top:2%;
+		margin-left:20%;
+		border: 6px solid #6e20b3;
+		border-radius:20px;
+		
+	}
+	
+	div.left{
+		float:center;
+		
+	}
+	
+	div.clear{
+		clear:both;
+	}
+	
+	.text {
+		color:#F3D677;
+		font-family:Verdana, sans-serif;
+		margin-top:5px;
+		text-align:center;
+	}
+	
+	form{
+		text-align:center;
+	}
+	
+</style>
+
+<div class="infobox">
+	<div class="text" id="register" style="text-align:left; margin-left:2%"> <!-- Regsistration submission -->
+			<form method="post" id="registerform" action = "https://www2.scs.ryerson.ca/~a5delacr/cgi-bin/lab07b.cgi" enctype="multipart/form-data">
+				<h2 class="text"> Contact Submission </h2>
+				<div class="left">
+					<label for="username">Name: </label>
+					<input id = "username" name = "username" type = "text" placeholder = "John Smith" required>
+					<label for="useraddress">Address: </label>
+					<input id = "useraddress" name = "useraddress" type = "text" placeholder = "3080 Chainsmith Street" required>
+				</div>
+				<div class="clear">&nbsp;</div>
+				<div class="left">
+					<label for="usercity">City: </label>
+					<input id = "usercity" name = "usercity" type = "text" placeholder = "New Motostoke" required>
+					<label for="userpostal">Postal Code: </label>
+					<input id = "userpostal" name = "userpostal" type = "text" placeholder = "A1B 2C3" required>
+				</div>
+				<div class="clear">&nbsp;</div>
+				<div class="left">
+					<label for="userprovince">Province/Territory: </label>
+					<select name="userprovince" id="userprovince">
+						<optgroup label="Provinces">
+							<option value="Ontario">Ontario</option>
+							<option value="Manitoba">Manitoba</option>
+							<option value="Saskatchewan">Saskatchewan</option>
+							<option value="Quebec">Quebec</option>
+							<option value="Alberta">Alberta</option>
+							<option value="Prince Edward Island">Prince Edward Island</option>
+							<option value="British Columbia">British Columbia</option>
+							<option value="New Brunswick">New Brunswick</option>
+							<option value="Nova Scotia">Nova Scotia</option>
+							<option value="Newfoundland and Labrodor">Newfoundland and Labrodor</option>
+						</optgroup>
+						<optgroup label="Territories">
+							<option value="Nunavut">Nunavut</option>
+							<option value="Yukon">Yukon</option>
+							<option value="Northwest Territories">Northwest Territories</option>
+						</optgroup>
+					</select>
+					<label for="userphone">Phone Number: </label>
+					<input id = "userphone" name = "userphone" type = "text" placeholder = "1234567890" required>
+				</div>
+				<div class="clear">&nbsp;</div>
+				<div class="left">
+					<label for="useremail">Email: </label>
+					<input id = "useremail" name = "useremail" type = "text" placeholder = "duck.dancing@birdmail.quack" required>
+					<label for="userpic">Avatar: </label>
+					<input id = "userpic" name = "userpic" type = "file" required>
+				</div>
+				<div class="clear">&nbsp;</div>
+				<button type="submit" style="margin:5px;">Register</button>
+			</form>
+		</div>
+</div>
+</body>
+</html>

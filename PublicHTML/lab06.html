@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- https://www.cs.ryerson.ca/~a5delacr/lab06.html -->
+<html lang=en>
+<head>
+	<title>
+		SVG Demonstration
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+
+
+<body style="background-color:#FFFFFF; color:#4d4d4d; text-align:center;">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+	
+	<style>
+		.header {
+			background-color: #bc8a5f;
+			color:white;
+			border-radius:10px;
+			font-size:24px;
+		}
+		
+		.text {
+			margin-top:-70px;
+			font-size:24px;
+			white-space:pre;
+			text-align:left;
+		}
+		
+		.picture {
+			border: 3px solid #4d4d4d;
+			background-color:#4d4d4d;
+			
+		}
+		
+	</style>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="p-2 border header">
+				<p> SVG Demonstration </p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<svg width="1200" height="300">
+					<polygon points="325,50 415,200, 235,200"
+					style="fill:#FEFF5B; stroke:black; stroke-width:3"> </polygon>
+					<polygon points="585,50 445,50 445,200, 585,200"
+					style="fill:#74C3D7; stroke:black; stroke-width:3"> </polygon>
+					<polygon points="700,50 780,108 748,200 652,200 620,108"
+					style="fill:#FFC1AB; stroke:black; stroke-width:3"> </polygon>
+					<polygon points="885,50 950,90 950,160 885,200 820,160 820,90"
+					style="fill:#84D7A6; stroke:black; stroke-width:3"> </polygon>
+					
+					<text x="285" y="230" style="font-size:24px; fill:#4d4d4d;">Triangle
+					<tspan x="447" y="230">Quadrilateral</tspan>
+					<tspan x="650" y="230">Pentagon</tspan>
+					<tspan x="840" y="230">Hexagon</tspan>
+					</text>
+				</svg>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<svg width="600" height="400">
+					<rect x="110" y="10" style="width:400px; height:268px; fill:#FFFFFF; stroke-width:3px; stroke:#4d4d4d"> </rect>
+					<circle cx="310" cy="144" r="80" style="fill:#BC002D;"> </circle>
+					<text x="210" y="320" style="font-size:24px; fill:#4d4d4d;">Flag of Japan (SVG)</text>
+				</svg>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+			<img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/1200px-Flag_of_Japan.svg.png" class="picture" style="max-width:400px; height:auto; margin-top:10px; margin-left:50px">
+				<svg width="600" height="400">
+					<text x="225" y="45" style="font-size:24px; fill:#4d4d4d;">Flag of Japan (PNG)</text>
+				</svg>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<svg width="600" height="400">
+					<rect x="110" y="10" style="width:400px; height:203px; fill:#FFFFFF; stroke-width:3px; stroke:#4d4d4d"> </rect>
+					<polygon points="110,213 510,213 510,101 237,101"
+					style="fill:#cf0921;"> </polygon>
+					<polygon points="110,10 510,10 510,101 237,101"
+					style="fill:#0035a9;"> </polygon>
+					<circle cx="160" cy="101" r="20" style="fill:#fcd20f;"> </circle>
+					<line x1="120" y1="101" x2="200" y2="101" style="stroke:#fcd20f; stroke-width:5;"> </line>
+					<line x1="160" y1="61" x2="160" y2="141" style="stroke:#fcd20f; stroke-width:5;"> </line>
+					<line x1="130" y1="71" x2="190" y2="131" style="stroke:#fcd20f; stroke-width:5;"> </line>
+					<line x1="130" y1="131" x2="190" y2="71" style="stroke:#fcd20f; stroke-width:5;"> </line>
+					<circle cx="215" cy="101" r="8" style="fill:#fcd20f;"> </circle>
+					<circle cx="122" cy="36" r="8" style="fill:#fcd20f;"> </circle>
+					<circle cx="122" cy="181" r="8" style="fill:#fcd20f;"> </circle>
+					<text x="180" y="260" style="font-size:24px; fill:#4d4d4d;">Flag of Philippines (SVG)</text>
+				</svg>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/1920px-Flag_of_the_Philippines.svg.png" class="picture" style="max-width:400px; height:auto; margin-top:10px; margin-left:50px">
+				<svg width="600" height="400">
+					<text x="195" y="45" style="font-size:24px; fill:#4d4d4d;">Flag of Philippines (PNG)</text>
+				</svg>
+					
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<fig>
+					<img src="https://media.tenor.com/yRSnf6wABQ4AAAAi/pato-duck.gif">
+					<figcaption>bottom duck</figcaption>
+				</fig>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
